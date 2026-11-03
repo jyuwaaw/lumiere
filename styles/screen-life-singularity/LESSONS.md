@@ -2,7 +2,7 @@
 
 **English** | [中文](LESSONS.zh.md)
 
-Each entry: problem → cause → what to do from the start next time. 👤 marks problems Benji pointed out.
+Each entry: problem → cause → what to do from the start next time. 👤 marks problems the director caught in review.
 
 ## Mood and sound
 
@@ -40,13 +40,13 @@ Each entry: problem → cause → what to do from the start next time. 👤 mark
 
 10. **Bilibili blocks direct downloads from the server (412)**
     - Next time: read `window.__playinfo__` inside the browser page to get the audio and video URLs, then download them in chunks from within the page.
-11. **The video-understanding tool bills but returns no text**
-    - Status: reported to the platform; still not fixed.
-    - Next time: look at reference videos through ffmpeg frame contact sheets instead.
-12. **The image-to-video model rejects Drive file IDs**
-    - Next time: pass a signed download URL.
-13. **Drive rejected a 525 MB upload (413)**
-    - Next time: serve large files from the sandbox preview page.
+11. **Don't count on a video-understanding model to watch the reference for you**
+    - Here the one we tried returned nothing usable.
+    - Next time: look at reference videos through ffmpeg frame contact sheets (`fps=1/3,tile=4x4`) from the start.
+12. **Image-to-video APIs often need a publicly fetchable image URL**
+    - Next time: pass a direct (signed) download URL, not a storage-internal file ID.
+13. **Large files (500 MB+) can exceed upload limits of file-sharing services**
+    - Next time: serve big renders straight from where they were made, or split delivery (web 1080p + a 4K download link).
 14. **4K initialisation is slow**
     - Cause: the double-resolution wallpaper needs a large-radius blur, so each render process takes about a minute to start.
     - Next time: don't time out the page load (`timeout: 0`).
@@ -58,6 +58,6 @@ Each entry: problem → cause → what to do from the start next time. 👤 mark
 
 ## What the controlled experiment showed
 
-- Without CoreSpeed tools (only the sandbox and open-source software), the same quality of picture and real math is achievable. An independent sub-session made a version in about 70 minutes.
+- With only a Linux sandbox and open-source software (no media-generation services), the same quality of picture and real math is achievable. An independent agent session made a version that way in about 70 minutes.
 - What really needs generation is the AI score that follows the shot list, the live-action shots and the custom sound effects.
 - The ready-made film score the sub-session picked (Scott Buckley) fit the theme better than the first AI score. **Choosing the mood matters more than choosing the tool.**

@@ -1,6 +1,15 @@
 # Template: how to run it
 
-> This folder is code only. The large assets (live-action shots `live/`, the final mix `audio_v6.wav`, the sound-effect sources and the depth-of-field masks) are in `singularity/singularity-src.tar.gz` on Drive, which unpacks to the same layout.
+> This folder is code only. Download the large assets from the GitHub release **`singularity-assets-v1`** and unpack them into this folder:
+>
+> - the live-action shots `live/`
+> - the final mix `audio_v6.wav`
+> - the score `music_dark.mp3`
+> - the generated sound effects `elsfx/`
+> - the Freesound sources `fs/`
+> - the depth-of-field masks
+>
+> The Mixkit sources can't be redistributed; `prep_audio.sh` downloads them from Mixkit by ID.
 
 ## Requirements
 
