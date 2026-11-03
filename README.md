@@ -1,28 +1,32 @@
 # lumiere
 
-Benji 的个人视频风格手册（取名自发明电影的卢米埃尔兄弟）：每做完一种风格的视频，就把能复用的配方、关键词和踩过的坑记下来，下次照着做，不再从零摸索。
+**English** | [中文](README.zh.md)
 
-## 风格索引
+Benji's personal playbook of video styles, named after the Lumière brothers, who invented cinema. After each video in a new style, the reusable recipe, the keywords and the mistakes go in here, so the next video starts from them instead of from scratch.
 
-| 风格 | 一句话 | 代表作 |
+## Styles
+
+| Style | In one line | Made with it |
 |---|---|---|
-| [screen-life-singularity](styles/screen-life-singularity/STYLE.md) | 伪录屏电影风：镜头贴着屏幕拍，AI 接管电脑解决一个人类没解决的问题，内容是真的 | SINGULARITY（2026-11，2:52，4K） |
+| [screen-life-singularity](styles/screen-life-singularity/STYLE.md) | Cinematic fake screen recording: the camera hugs the screen while an AI takes over the computer and solves a problem no human has, and the content is real | SINGULARITY (2026-11, 2:52, 4K) |
 
-## 每个风格文件夹里有什么
+## What's in each style folder
 
-- `STYLE.md`：关键词、参考片、情绪弧线、分镜语法、画面质感和声音设计的配方
-- `LESSONS.md`：踩过的坑、被指出的问题、下次一开始就该怎么做
-- `prompts/`：AI 配乐、音效、图片、视频用过的原始提示词，带结果说明
-- `template/`：可复用的代码和脚本
-- `credits.md`：素材来源与署名
+- `STYLE.md`: keywords, reference films, emotional arc, shot grammar, and the recipes for look and sound design
+- `LESSONS.md`: mistakes made, problems others pointed out, and what to do from the start next time
+- `prompts/`: the original prompts for AI music, sound effects, images and video, with notes on how each turned out
+- `template/`: reusable code and scripts
+- `credits.md`: asset sources and attributions
 
-## 通用清单
+## Checklists
 
-- [出片前自检](checklists/before-render.md)
-- [发布前检查](checklists/before-publish.md)
+- [Before rendering](checklists/before-render.md)
+- [Before publishing](checklists/before-publish.md)
 
-## 新增一种风格
+## Adding a style
 
-1. 复制一个现有风格文件夹，改名。
-2. 做完片子后复盘：先写 `LESSONS.md`（新鲜的教训最值钱），再补 `STYLE.md`。
-3. 在上面的索引表里加一行。
+1. Copy an existing style folder and rename it.
+2. Once the video is done, write `LESSONS.md` first, while the lessons are fresh, then fill in `STYLE.md`.
+3. Add a row to the table above.
+
+> The style folders themselves are written in Chinese.
