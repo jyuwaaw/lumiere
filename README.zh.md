@@ -2,6 +2,10 @@
 
 [English](README.md) | **中文**
 
+[![SINGULARITY 预告（35 秒）：点击观看](docs/cover.jpg)](https://github.com/jyuwaaw/lumiere/releases/download/singularity-assets-v1/lumiere_teaser_720p.mp4)
+
+完整版在 B 站：（发布后补上链接）
+
 一个开放的视频风格手册，取名自发明电影的卢米埃尔兄弟。
 
 每种风格都是一份完整、可复用的配方，包括：

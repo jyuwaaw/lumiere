@@ -2,6 +2,10 @@
 
 **English** | [中文](README.zh.md)
 
+[![SINGULARITY teaser (35 s): click to watch](docs/cover.jpg)](https://github.com/jyuwaaw/lumiere/releases/download/singularity-assets-v1/lumiere_teaser_720p.mp4)
+
+Full film on Bilibili: (link after publishing)
+
 An open playbook of video styles, named after the Lumière brothers, who invented cinema.
 
 Each style is a complete, reusable recipe. It covers the keywords and references, the emotional arc and shot grammar, the look and sound design, the exact prompts used, the mistakes made along the way, and a working template you can render from. The goal is that your next video in a style starts from everything learned last time, not from scratch.
