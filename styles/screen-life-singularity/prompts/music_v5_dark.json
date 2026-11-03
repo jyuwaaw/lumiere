@@ -1,0 +1,165 @@
+{
+ "_note": "推荐使用。v5 配乐（敬畏 + 不安）。模型 elevenlabs/music/v2.5，seed 1231。audio_reference 填一首对味参考曲的 60 秒片段的签名链接（这次用 Scott Buckley《Decoherence》第 40–100 秒）。各段时长对应 STYLE.md 的分镜。",
+ "composition_plan": {
+  "chunks": [
+   {
+    "text": "[Cold Open]\n{instrumental, cold and vast, a low sub drone, slowly morphing dark synth textures, a few distant sparse piano notes, late night unease, lots of empty space}",
+    "duration_ms": 54900,
+    "positive_styles": [
+     "dark ambient film score",
+     "deep space",
+     "slowly morphing synth textures",
+     "low sub drone",
+     "sparse distant piano",
+     "ominous",
+     "uneasy",
+     "cold",
+     "instrumental",
+     "high-end film score production"
+    ],
+    "negative_styles": [
+     "upbeat",
+     "triumphant",
+     "heroic",
+     "corporate",
+     "tech promo",
+     "epic trailer",
+     "major key",
+     "drums",
+     "vocals"
+    ],
+    "audio_reference": {
+     "audio_url": "<SIGNED_URL_OF_REFERENCE_EXCERPT>"
+    }
+   },
+   {
+    "text": "[Something Wakes]\n{instrumental, dissonant strings slowly creeping upward, unsettling low pulses, a cold synth tone that will not resolve, tension rising, something inhuman awakens}",
+    "duration_ms": 21000,
+    "positive_styles": [
+     "dissonant creeping strings",
+     "unsettling pulses",
+     "rising tension",
+     "dark",
+     "ominous",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "triumphant",
+     "heroic",
+     "upbeat",
+     "major key",
+     "corporate",
+     "vocals"
+    ],
+    "context_adherence": "high"
+   },
+   {
+    "text": "[Decision]\n{instrumental, sudden near silence, one eerie sustained high string harmonic over a faint deep sub swell}",
+    "duration_ms": 8000,
+    "positive_styles": [
+     "near silence",
+     "eerie high string harmonic",
+     "deep sub swell",
+     "suspense",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "drums",
+     "melody",
+     "vocals",
+     "triumphant"
+    ],
+    "context_adherence": "high"
+   },
+   {
+    "text": "[Machine Thinking]\n{instrumental, a relentless mechanical ostinato in a minor key, cold staccato low strings and ticking synth pulses, inhuman precision, ominous, slowly intensifying, never heroic}",
+    "duration_ms": 30000,
+    "positive_styles": [
+     "relentless mechanical ostinato",
+     "minor key",
+     "cold staccato low strings",
+     "ticking synth pulses",
+     "ominous",
+     "dark thriller score",
+     "slowly intensifying",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "triumphant",
+     "heroic",
+     "uplifting",
+     "corporate",
+     "tech promo",
+     "EDM",
+     "major key",
+     "vocals"
+    ],
+    "context_adherence": "high"
+   },
+   {
+    "text": "[Event Horizon]\n{instrumental, the pulse falls away, a dark swelling crescendo, choir-like synth pad and low brass rising together, overwhelming awe mixed with dread}",
+    "duration_ms": 11500,
+    "positive_styles": [
+     "dark swelling crescendo",
+     "choir-like synth pad",
+     "low brass",
+     "awe and dread",
+     "cosmic",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "triumphant",
+     "heroic",
+     "major key",
+     "drums",
+     "vocals"
+    ],
+    "context_adherence": "high"
+   },
+   {
+    "text": "[Singularity]\n{instrumental, one enormous low drone hit, then almost a vacuum, only a vast dark reverb tail hanging in space}",
+    "duration_ms": 7500,
+    "positive_styles": [
+     "enormous low drone",
+     "near vacuum",
+     "vast dark reverb",
+     "cosmic",
+     "minimal",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "melody",
+     "triumphant",
+     "brass fanfare",
+     "drums",
+     "vocals"
+    ],
+    "context_adherence": "medium"
+   },
+   {
+    "text": "[Afterwards]\n{instrumental, quiet and fragile, a solitary piano with distant strings, suspended unresolved harmony, melancholic awe, slowly fading into silence}",
+    "duration_ms": 39000,
+    "positive_styles": [
+     "solitary fragile piano",
+     "distant strings",
+     "unresolved suspended harmony",
+     "melancholic awe",
+     "quiet",
+     "fade to silence",
+     "instrumental"
+    ],
+    "negative_styles": [
+     "hopeful",
+     "triumphant",
+     "major key resolution",
+     "upbeat",
+     "drums",
+     "vocals"
+    ],
+    "context_adherence": "high"
+   }
+  ]
+ },
+ "seed": 1231,
+ "output_format": "mp3_48000_320"
+}
