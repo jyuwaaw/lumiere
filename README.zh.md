@@ -8,7 +8,7 @@ Benji 的个人视频风格手册，取名自发明电影的卢米埃尔兄弟�
 
 | 风格 | 一句话 | 代表作 |
 |---|---|---|
-| [screen-life-singularity](styles/screen-life-singularity/STYLE.md) | 伪录屏电影风：镜头贴着屏幕拍，AI 接管电脑解决一个人类没解决的问题，内容是真的 | SINGULARITY（2026-11，2:52，4K） |
+| [screen-life-singularity](styles/screen-life-singularity/STYLE.zh.md) | 伪录屏电影风：镜头贴着屏幕拍，AI 接管电脑解决一个人类没解决的问题，内容是真的 | SINGULARITY（2026-11，2:52，4K） |
 
 ## 每个风格文件夹里有什么
 
@@ -20,11 +20,13 @@ Benji 的个人视频风格手册，取名自发明电影的卢米埃尔兄弟�
 
 ## 通用清单
 
-- [出片前自检](checklists/before-render.md)
-- [发布前检查](checklists/before-publish.md)
+- [出片前自检](checklists/before-render.zh.md)
+- [发布前检查](checklists/before-publish.zh.md)
 
 ## 新增一种风格
 
 1. 复制一个现有风格文件夹，改名。
 2. 做完片子后复盘：先写 `LESSONS.md`（新鲜的教训最值钱），再补 `STYLE.md`。
 3. 在上面的索引表里加一行。
+
+> 所有文档以英文为主，中文版是同目录下的 `*.zh.md`。

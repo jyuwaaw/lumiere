@@ -29,4 +29,4 @@ Benji's personal playbook of video styles, named after the Lumière brothers, wh
 2. Once the video is done, write `LESSONS.md` first, while the lessons are fresh, then fill in `STYLE.md`.
 3. Add a row to the table above.
 
-> The style folders themselves are written in Chinese.
+> Every document is in English, with a Chinese version alongside it as `*.zh.md`.

@@ -1,61 +1,63 @@
-# 踩过的坑（SINGULARITY，2026-10-28 → 11-03）
+# Lessons (SINGULARITY, 2026-10-28 → 11-03)
 
-按“问题 → 原因 → 下次一开始就怎么做”记录。带 👤 的是 Benji 指出的问题。
+**English** | [中文](LESSONS.zh.md)
 
-## 情绪和声音
+Each entry: problem → cause → what to do from the start next time. 👤 marks problems Benji pointed out.
 
-1. 👤 **音效听着廉价**
-   - 原因：第一版所有声音都是代码合成的。
-   - 下次：音效直接用真实录音（Freesound 的 MacBook 打字、鼠标、房间环境声），合成只用来做铺底。
-2. 👤 **配乐像科技宣传片，太燃，跟主题不搭**
-   - 原因：情绪是按“AI 攻克难题”定的，提示词里写了推进感、强度上升、庄严、铜管、充满希望。
-   - 下次：**写配乐提示词之前，先想清楚这是谁视角的片子。** 这类片子的主角是那个看着奇点发生的人，基调是敬畏加不安。提示词里明确排除：triumphant、heroic、corporate、tech promo、epic trailer、major key。
-3. **AI 配乐只生成了一次，也没比较候选**
-   - 下次：拿一首对味的参考曲作风格参考；条件允许就出 2–3 个候选让人挑。
-4. 👤 **54 秒（AI 接管那一刻）的音效太刺耳**
-   - 原因：AI 生成的“数字故障扫频”能量几乎全在 4kHz 以上，一进来整体响度高了 12 dB。
-   - 下次：生成的音效先看频谱，高频占比太高就低通滤波、压低音量，或者换成低沉的呼啸加闷响。
-5. **做的人听不到声音**
-   - 原因：负责制作的 AI 没有听觉，只能看响度、频谱、起音的数据。
-   - 下次：声音相关的改动一定要人戴耳机听一遍，再定稿。
+## Mood and sound
 
-## 画面
+1. 👤 **The sound effects sounded cheap**
+   - Cause: in the first version every sound was synthesized in code.
+   - Next time: use real recordings for sound effects (Freesound MacBook typing, mouse, room tone). Keep synthesis for beds only.
+2. 👤 **The score sounded like a tech promo: too hyped, off-theme**
+   - Cause: the mood was set as "AI cracks the problem", and the prompts asked for drive, rising intensity, majesty, brass and hope.
+   - Next time: **before writing music prompts, decide whose point of view the film is from.** In this kind of film the protagonist is the person watching the singularity happen, so the tone is awe plus unease. Exclude triumphant, heroic, corporate, tech promo, epic trailer and major key explicitly.
+3. **The AI score was generated once, with no candidates to compare**
+   - Next time: condition on a reference track that fits the mood, and when you can, generate 2–3 candidates for a human to pick from.
+4. 👤 **The sound at 54 s (the AI takeover) was piercing**
+   - Cause: the AI-generated "digital glitch sweep" had almost all its energy above 4 kHz and raised the overall loudness by 12 dB the moment it came in.
+   - Next time: look at the spectrum of every generated sound effect first. If the high-frequency share is too big, low-pass it and turn it down, or swap it for a low whoosh plus a thud.
+5. **The maker can't hear**
+   - Cause: the AI doing the production has no hearing, only data: loudness, spectra, onsets.
+   - Next time: any sound change needs a human listening on headphones before it's final.
 
-6. 👤 **“由我来证明”没有在画面正中**
-   - 原因：那个镜头的焦点用的是写死的坐标。
-   - 下次：**镜头一律锚定在 DOM 元素上**（如 `x: '#np_l3'`）；正在打字的行，用不可见的剩余文字占住整行宽度，这样整行始终居中。
-7. 👤 **标题卡丑**
-   - 原因：用了模糊的红蓝花瓣壁纸配细字，质感廉价，也和暗色基调不搭。
-   - 下次：标题卡要扣住片子的核心意象（这次是“奇点”，做成黑色深空加事件视界光环），留白多、字距宽、字要细。
-8. 👤 **标题后有一帧闪屏**
-   - 原因：叠加的真人镜头比切点早结束了 2 帧，底下的标题卡露了出来。
-   - 下次：叠加真人镜头时让最后一帧保持到切点（ffmpeg overlay 设 `eof_action=repeat`）；**每次出片都逐帧扫亮度，自动找孤立的闪帧**。
-9. **窗口墙频闪**
-   - 原因：16 个窗口在白底页面和暗底页面之间快速切换，整体亮度剧烈抖动。
-   - 下次：降低切换频率，压暗白底页面，并保证相邻窗口不出现同一个页面。
+## Picture
 
-## 工具和工程
+6. 👤 **"I'll prove it" was not centred**
+   - Cause: that shot's focus point used hard-coded coordinates.
+   - Next time: **anchor every camera move to a DOM element** (e.g. `x: '#np_l3'`). For a line being typed, hold its full width with invisible remaining text, so the whole line stays centred.
+7. 👤 **The title card was ugly**
+   - Cause: a blurry red-and-blue petal wallpaper with thin text looked cheap and clashed with the dark tone.
+   - Next time: build the title card around the film's core image (here "singularity" became black deep space with an event-horizon ring), with lots of empty space, wide letter spacing and thin type.
+8. 👤 **A flash frame right after the title**
+   - Cause: the overlaid live-action shot ended 2 frames before the cut and exposed the title card underneath.
+   - Next time: hold the last frame of overlays up to the cut (ffmpeg `overlay` with `eof_action=repeat`). **After every render, scan per-frame luminance automatically for isolated flash frames.**
+9. **The window wall strobed**
+   - Cause: 16 windows switched rapidly between white and dark pages, so overall brightness jumped around.
+   - Next time: switch more slowly, darken the white pages, and make sure neighbouring windows never show the same page.
 
-10. **B 站从服务器直接下载会被拦（412）**
-    - 下次：在浏览器页面里读取 `window.__playinfo__` 拿到音视频地址，再在页面内分块下载。
-11. **视频理解工具只计费、不返回文字**
-    - 情况：已向平台反馈，这次没修好。
-    - 下次：直接用 ffmpeg 抽帧拼图来看参考片。
-12. **图生视频模型不认 Drive 文件 ID**
-    - 下次：传签名的下载链接。
-13. **Drive 上传 525MB 文件被拒（413）**
-    - 下次：大文件放在沙箱的预览页上供下载。
-14. **4K 初始化慢**
-    - 原因：双倍分辨率的壁纸要做大半径模糊，每个渲染进程初始化约 1 分钟。
-    - 下次：页面加载不要设超时（`timeout: 0`）。
-15. **等待脚本把自己也当成了要等的进程，空等了 2 小时**
-    - 原因：用 `pgrep -f` 匹配命令行，匹配到了等待脚本自己。
-    - 下次：用 `pgrep -x` 精确匹配进程名。
-16. **改一个镜头不需要全部重渲**
-    - 做法：`render.js range` 只渲那一段帧，再跑一次后期。
+## Tools and engineering
 
-## 对照实验的结论
+10. **Bilibili blocks direct downloads from the server (412)**
+    - Next time: read `window.__playinfo__` inside the browser page to get the audio and video URLs, then download them in chunks from within the page.
+11. **The video-understanding tool bills but returns no text**
+    - Status: reported to the platform; still not fixed.
+    - Next time: look at reference videos through ffmpeg frame contact sheets instead.
+12. **The image-to-video model rejects Drive file IDs**
+    - Next time: pass a signed download URL.
+13. **Drive rejected a 525 MB upload (413)**
+    - Next time: serve large files from the sandbox preview page.
+14. **4K initialisation is slow**
+    - Cause: the double-resolution wallpaper needs a large-radius blur, so each render process takes about a minute to start.
+    - Next time: don't time out the page load (`timeout: 0`).
+15. **A wait script waited 2 hours for itself**
+    - Cause: `pgrep -f` matched the waiting script's own command line.
+    - Next time: match the process name exactly with `pgrep -x`.
+16. **Changing one shot doesn't need a full re-render**
+    - How: `render.js range` renders just that range of frames; then run post again.
 
-- 不用 CoreSpeed 工具（只用沙箱和开源工具），也能做到同水平的画面和真实数学。子会话独立做一版约 70 分钟。
-- 真正离不开生成能力的是这几样：按分镜对齐的 AI 配乐、真人镜头、定制音效。
-- 子会话选的现成电影配乐（Scott Buckley）比第一版 AI 配乐更贴题。教训：**选什么情绪，比用什么工具重要。**
+## What the controlled experiment showed
+
+- Without CoreSpeed tools (only the sandbox and open-source software), the same quality of picture and real math is achievable. An independent sub-session made a version in about 70 minutes.
+- What really needs generation is the AI score that follows the shot list, the live-action shots and the custom sound effects.
+- The ready-made film score the sub-session picked (Scott Buckley) fit the theme better than the first AI score. **Choosing the mood matters more than choosing the tool.**

@@ -1,5 +1,5 @@
 {
- "_note": "推荐使用。v5 配乐（敬畏 + 不安）。模型 elevenlabs/music/v2.5，seed 1231。audio_reference 填一首对味参考曲的 60 秒片段的签名链接（这次用 Scott Buckley《Decoherence》第 40–100 秒）。各段时长对应 STYLE.md 的分镜。",
+ "_note": "RECOMMENDED. v5 score (awe + unease). Model elevenlabs/music/v2.5, seed 1231. Set audio_reference to a signed URL of a 60 s excerpt of a reference track that fits the mood (this time Scott Buckley's Decoherence, 40–100 s). Section durations match the shot list in STYLE.md.",
  "composition_plan": {
   "chunks": [
    {

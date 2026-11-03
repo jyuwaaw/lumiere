@@ -1,25 +1,27 @@
-# 出片前自检
+# Before rendering
 
-## 全量渲染之前
+**English** | [中文](before-render.zh.md)
 
-- [ ] 每个镜头抽 1–2 张静帧拼成一张图，逐个看
-- [ ] 关键台词和关键数字在画面正中（镜头锚定元素，不写死坐标）
-- [ ] 打字镜头：文字没被裁掉，输入法候选框完整
-- [ ] 标题卡单独看：够不够克制，是否扣住片子的核心意象
-- [ ] 画面上所有数字和代码输出都是真实计算结果
+## Before the full render
 
-## 渲染之后
+- [ ] Pull 1–2 stills per shot into a contact sheet and look at each one
+- [ ] Key lines and key numbers sit dead centre (camera anchored to elements, no hard-coded coordinates)
+- [ ] Typing shots: text isn't cropped and the IME candidate bar is fully visible
+- [ ] Look at the title card on its own: is it restrained enough, and does it carry the film's core image?
+- [ ] Every number and code output on screen comes from a real computation
 
-- [ ] 逐帧扫平均亮度，找孤立的闪帧（某一帧比前后两帧都亮很多或暗很多）
-- [ ] 检查每个硬切点前后各 3 帧
-- [ ] 叠加的素材有没有提前结束、露出底层画面
-- [ ] 快速闪烁的段落（窗口墙等）有没有频闪感
+## After the render
 
-## 声音
+- [ ] Scan per-frame mean luminance for isolated flash frames (a frame much brighter or darker than both neighbours)
+- [ ] Check 3 frames either side of every hard cut
+- [ ] No overlay ends early and exposes the layer underneath
+- [ ] Fast-flickering passages (the window wall, etc.) don't strobe
 
-- [ ] **人戴耳机完整听一遍**
-- [ ] 每段配乐的情绪符合 STYLE.md 的设定，没跑成宣传片
-- [ ] 生成的音效看过频谱：高频占比不过高，突然的响度跳变不超过 6 dB
-- [ ] 键盘声、鼠标声和画面里的动作对得上
-- [ ] 静默拍是真的静（底噪、混响尾巴都压下去）
-- [ ] 整体响度标准化（-16 LUFS）
+## Sound
+
+- [ ] **A human listens to the whole thing on headphones**
+- [ ] Every section of the score matches the mood in STYLE.md and hasn't drifted into a promo
+- [ ] Generated sound effects checked on a spectrum: no excessive high-frequency share, no sudden loudness jumps over 6 dB
+- [ ] Keyboard and mouse sounds line up with the actions on screen
+- [ ] Silent beats are truly silent (beds and reverb tails pulled down too)
+- [ ] Overall loudness normalised (-16 LUFS)

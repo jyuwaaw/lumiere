@@ -1,12 +1,14 @@
-# 发布前检查
+# Before publishing
 
-- [ ] 素材许可逐条核对（打开每条素材页面看许可）：
-  - CC0 不用署名
-  - CC BY 必须写：作品名、作者、许可类型、原始链接，并注明“经切片、混音处理”
-  - Mixkit 不要求署名
-- [ ] 致敬或二创：写明原作者和原作链接
-- [ ] 片中虚构的产品、品牌注明“虚构”
-- [ ] 涉及数学或科学结论：写清验证到了什么程度，不夸大成“证明”
-- [ ] 选好封面帧（这次用的是瘫坐镜头：闹钟 0:00，窗外烟花）
-- [ ] B 站：标题、简介（含署名）、标签
-- [ ] Twitter：线程每条不超过 280 字符，最后一条放署名和 B 站链接；视频上传 1080p（4K 太大）
+**English** | [中文](before-publish.zh.md)
+
+- [ ] Check each asset's licence one by one (open each asset page and read it):
+  - CC0: no attribution needed
+  - CC BY: must state title, author, licence and source link, and note "sliced and remixed"
+  - Mixkit: no attribution required
+- [ ] Homage or derivative work: name the original author and link the original
+- [ ] Mark fictional products and brands in the film as fictional
+- [ ] Math or science claims: say exactly how far they were verified; don't inflate them into a "proof"
+- [ ] Pick the cover frame (this time: the slump shot, clock at 0:00, fireworks outside)
+- [ ] Bilibili: title, description (with attributions), tags
+- [ ] Twitter: each tweet in the thread under 280 characters; put the attributions and the Bilibili link in the last one; upload the 1080p video (4K is too large)
