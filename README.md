@@ -15,6 +15,7 @@ Each style is a complete, reusable recipe. It covers the keywords and references
 | Style | In one line | Made with it |
 |---|---|---|
 | [screen-life-singularity](styles/screen-life-singularity/STYLE.md) | Cinematic fake screen recording: the camera hugs the screen while an AI takes over the computer and solves a problem no human has, and the content is real | SINGULARITY (2:52, 4K) |
+| [archival-fable-somewhere-to-be](styles/archival-fable-somewhere-to-be/STYLE.md) | A parable told over archival engravings and 16mm footage with a whispered fairy-tale voiceover; every image of the answer is a real product capability, and the brand comes only at the end | Somewhere to Be (1:46, 1080p) |
 
 ## What's in a style folder
 

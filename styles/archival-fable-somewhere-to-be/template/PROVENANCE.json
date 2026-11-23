@@ -1,0 +1,65 @@
+{
+ "music2/M1_17.mp3": {
+  "model": "elevenlabs/music/v2.5",
+  "mode": "composition_plan M1 in tools/music3.py",
+  "seed": 17
+ },
+ "music2/M3_3.mp3": {
+  "model": "elevenlabs/music/v2.5",
+  "mode": "composition_plan M3 in tools/music3.py",
+  "seed": 3
+ },
+ "music2/M2p_2.mp3": {
+  "model": "elevenlabs/music/v2.5",
+  "mode": "prompt",
+  "music_length_ms": 22000,
+  "force_instrumental": true,
+  "job_path": "tmp/media/cs_job_01a1f620cc0576a1b72f8184b9a86fb8/0.mp3",
+  "prompt": "Instrumental cinematic thriller cue, 22 seconds. It starts immediately at a moderate level with a fast pizzicato string ostinato at 120 bpm and a low pulsing synth, then layers multiply: more string ostinatos, low cello and low brass, deep taiko-like percussion hits every bar, a rising shepard-tone effect. A relentless crescendo of dread that keeps accelerating and climbs to a huge peak in the final two seconds, ending abruptly on the loudest hit. Dark, minor key, urgent, anxious. No guitar, no vocals, no choir, no drum kit."
+ },
+ "vo2/vo_5.mp3": {
+  "model": "elevenlabs/tts/eleven-v4",
+  "voice": "Laura",
+  "stability": 0.4,
+  "seed": 5,
+  "text": "TEXT in tools/vo2.py"
+ },
+ "sfx/*": {
+  "model": "elevenlabs/sound-effects/v3",
+  "note": "prompts in the v2 session transcript"
+ },
+ "sfx/impact1.mp3": {
+  "model": "elevenlabs/sound-effects/v3",
+  "duration_seconds": 4,
+  "job_path": "tmp/media/cs_job_01a1f63fe4ac7407ae72bb8c4cc3b2a5/0.mp3",
+  "prompt": "A massive cinematic impact hit: deep low boom and orchestral slam, with a huge cathedral reverb tail that rings out and decays to silence over three seconds. One hit only."
+ },
+ "stills/*.png": {
+  "model": "fal-ai/nano-banana-pro",
+  "aspect_ratio": "4:3",
+  "resolution": "2K",
+  "prompts": "shots.py",
+  "jobs": "stills/ledger.json"
+ },
+ "clips/*.mp4": {
+  "model": "minimax/h3-max/image-to-video",
+  "duration": 6,
+  "resolution": "768P",
+  "prompts": "shots.py (motion field)",
+  "jobs": "clips/ledger.json"
+ },
+ "vo2/vo_e13.mp3": {
+  "model": "elevenlabs/tts/eleven-v4",
+  "voice": "Laura",
+  "stability": 0.4,
+  "seed": 13,
+  "job": "cs_job_01a20a7e10b774c89b2b01351eca0a74",
+  "used_for": "v2.1 ending: harness lines and the slogan",
+  "text": "[gently] The minds were never the problem.\n\n[gently] They only needed somewhere to be.\n\n[warmly] Not chains, to hold them still... A harness, to pull together.\n\n[warm, hopeful] Your team. Your agent. One company harness.",
+  "picked_over": "seeds 5 and 9: same words; seed 13 has the lowest pitch peaks"
+ },
+ "stills/e1.png, stills/e2.png, clips/e1.mp4": {
+  "prompts": "shots.py INSERTS e1, e2",
+  "jobs": "stills/ledger.json, clips/ledger.json"
+ }
+}
