@@ -63,3 +63,6 @@ Each entry: problem → cause → what to do from the start next time. 👤 mark
 19. **The checksum step failed after only reading the code**
     - Cause: `MANIFEST.sha256` lists the `__pycache__` files, and importing `shots.py` with another Python build rewrote them.
     - Next time: leave `__pycache__` out of the manifest. Until then, don't run Python inside an unpacked package before `build.sh`; restore the cache files from the archive if you did.
+20. 👤 **The ending felt off: a slogan card, then a closing shot of mostly empty sky**
+    - Cause: the slogan was said and then shown again, and the last engraving was composed with an empty upper two thirds to hold the logo and slogan. Without the text it was four seconds of empty frame.
+    - Next time: end like a film. Fade the last story image to black, hold a beat of black, then show the logo alone. Don't compose a shot only to carry text.

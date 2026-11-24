@@ -3,7 +3,7 @@
 **English** | [中文](STYLE.zh.md)
 
 Reference: the Paradigm launch film (x.com/thescottfan/status/2119863088795001001).
-This film: *Somewhere to Be*, a 106 s brand film for CoreSpeed, 1920×1080, 24 fps, v2.1 (2026-11-23).
+This film: *Somewhere to Be*, a 103.5 s brand film for CoreSpeed, 1920×1080 and 4K, 24 fps, v2.3 (2026-11-24).
 
 A parable told over archival material: steel engravings and faded 16mm footage, a whispered fairy-tale voiceover, and the product only in the last seconds. It suits any brand film where the product answers a problem the audience already feels.
 
@@ -18,7 +18,7 @@ A parable told over archival material: steel engravings and faded 16mm footage, 
   4. Hard cut to black.
   5. Someone asks where the minds should live, not how clever they are.
   6. Each image of the answer maps to one real capability of the product (a room that remembers, doors that open with your keys, hands that reach your machines, a clock that wakes them, a keeper who still asks first).
-  7. An image from the fear act comes back answered (chains → a harness), then the slogan and the logo.
+  7. An image from the fear act comes back answered (chains → a harness); the picture fades to black and the logo appears alone.
 - **The soul**: **every image of the answer is a real product capability**, and the fear is real too. If a metaphor maps to nothing that ships, cut it. The brand appears only at the end, carried by the logo, not by a spoken name.
 
 ## Mood
@@ -33,9 +33,9 @@ Whose point of view? The people who look after the minds. The audience should fe
 | Black | 53.6–55.2 | the floor drops | nothing but the hit's reverb tail |
 | Turn | 55.2–65 | fragile hope | solo felt piano, single notes, lots of space |
 | Rise and climax | 65–92 | warm, building, euphoric | piano arpeggios, warm strings, then full orchestra |
-| Resolve | 92–106 | calm, at home | one long sustained chord that rings out |
+| Resolve | 92–103.5 | calm, at home | one long sustained chord that fades out with the logo |
 
-## Shot grammar (106 s)
+## Shot grammar (103.5 s)
 
 | Time (s) | Shot |
 |---|---|
@@ -46,8 +46,8 @@ Whose point of view? The people who look after the minds. The audience should fe
 | 55.2–65.2 | A figure with a lantern walking up a hill at golden hour; a light coming on in a lone house |
 | 65.2–82 | The answer, one image per capability: a star chart like a map of memory, doors opening down a corridor, a mechanical hand flipping a switch, an astronomical clock lighting up, a hand knocking on a door |
 | 82–92 | The earlier images return warm and lit: the apartment windows, the spheres, the sphere alone, the empty room now a lived-in study |
-| 92–97.6 | The answer to the chains: hands buckling a leather harness, the sphere glowing behind them |
-| 97.6–106 | Engraving: people and spheres pulling one wagon together by a shared harness; the logo, then the slogan under it |
+| 92–98.6 | The answer to the chains: hands buckling a leather harness, the sphere glowing behind them; it fades to black half a second after the last word |
+| 98.6–103.5 | A beat of black, then the logo alone, centred on black, fading in and out |
 
 ## Look recipe
 
@@ -62,7 +62,7 @@ Whose point of view? The people who look after the minds. The audience should fe
   - both get grain, gate weave, flicker, halation, dust and a rounded 4:3 gate;
   - engravings that came on paper with margins are cropped to the plate (the `PLATES` set); full-bleed ones are not.
 - **Movement**: stills get a slow zoom and pan; the fear act adds shake and flicker that grow with the cutting speed.
-- **End card**: the logo, then one line of slogan in a serif under it. No caption under the slogan, because the card already shows it.
+- **Ending**: end like a film. The last story image fades to black, a beat of black (under a second), then the logo alone on black, fading in and out (about 3.5 s). No slogan card, and no closing shot composed only to leave room for text.
 
 ## Sound recipe
 
