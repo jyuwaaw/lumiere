@@ -23,6 +23,7 @@
 | 风格 | 一句话 | 代表作 |
 |---|---|---|
 | [screen-life-singularity](styles/screen-life-singularity/STYLE.zh.md) | 伪录屏电影风：镜头贴着屏幕拍，AI 接管电脑解决一个人类没解决的问题，内容是真的 | SINGULARITY（2:52，4K） |
+| [archival-fable-somewhere-to-be](styles/archival-fable-somewhere-to-be/STYLE.zh.md) | 用档案铜版画和 16mm 胶片讲寓言，配耳语般的童话旁白；答案里的每个画面都是产品的真实能力，品牌只在最后出现 | Somewhere to Be（1:46，1080p） |
 
 ## 每个风格文件夹里有什么
 
